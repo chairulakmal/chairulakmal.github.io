@@ -1,0 +1,19 @@
+* {
+  font-size: large;
+}
+
+h1 {
+  font-size: 10vh;
+  min-height: 16px;
+  color: coral;
+}
+
+li {
+  list-style-type: lower-greek;
+}
+
+/* copyleft icon */
+.copyleft {
+  display: inline-block;
+  transform: rotate(180deg);
+}
