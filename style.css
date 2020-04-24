@@ -2,10 +2,15 @@
   font-size: large;
 }
 
+body {
+  margin-left: 5%
+}
+
 h1 {
   font-size: 10vh;
   min-height: 16px;
   color: coral;
+  margin-left: 5%;
 }
 
 li {
