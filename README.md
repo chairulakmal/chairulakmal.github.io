@@ -1,9 +1,15 @@
-## ***chairulakmal.github.io***
+# chairulakmal.com v1
 
-# aboutMe
+The first iteration of my personal site at [chairulakmal.com](https://chairulakmal.com/)
 
-A short explanation of who I am and what I want to do:
+## Dependencies
 
-1. Who I am: Chairul Akmal
-2. What I want to do: starting a company working on better remote work infrastructure
-3. Thank you for reading this. Also, if you've got the time. [Try out this game that I translated.](https://chairulakmal.github.io/trust/)
+  - **Technology stack**:
+    - HTML, CSS, JS
+    - [jQuery](https://jquery.com/)
+    - [Bootstrap](https://getbootstrap.com/)
+
+----
+## Open source licensing
+[MIT license](LICENSE)
+----
