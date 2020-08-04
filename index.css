@@ -4,18 +4,34 @@
 
 body {
   margin-left: 5%;
-  background-color: #333;
-  color: aliceblue;
+  background-color: rgba(90, 90, 90, 1);
+  color: #99d8d0;
 }
 
-#Top {
+#zeus {
   min-height: 100vh;
+  background-color: rgba(54, 54, 54, 1);
 }
 
 h1 {
-  min-height: 16px;
-  color: coral;
-  margin-left: 5%;
+  color: #f09ae9;
+}
+
+#hacktiv8_verify {
+  width: 20vh;
+  height: 20vh;
+}
+
+#thumbnailVerify:hover {
+  cursor: pointer;
+}
+
+a  {
+  color: #ffbcbc;
+}
+
+a:visited {     
+  color: #b7efcd;
 }
 
 li {
@@ -23,7 +39,7 @@ li {
 }
 
 footer {
-  position: absolute;
+  background-color: rgba(30, 30, 30, 1);
 }
 
 /* copyleft icon */

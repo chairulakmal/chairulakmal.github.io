@@ -10,6 +10,4 @@ The first iteration of my personal site at [chairulakmal.com](https://chairulakm
     - [Bootstrap](https://getbootstrap.com/)
 
 ----
-## Open source licensing
-[MIT license](LICENSE)
-----
+This site is released under the [MIT license](LICENSE)
