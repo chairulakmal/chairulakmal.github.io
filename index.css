@@ -18,8 +18,12 @@ h1 {
 }
 
 #hacktiv8_verify {
+  min-height: 20vh;
+}
+
+#thumbnailVerify {
   width: 20vh;
-  height: 20vh;
+  min-width: 60px;
 }
 
 #thumbnailVerify:hover {
