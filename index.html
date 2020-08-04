@@ -23,34 +23,65 @@
 <body class="container">
   <section id="zeus" class="container-fluid">
     <h1 class="display-4 text-center">Chairul Akmal</h1>
-    <p class="lead">A short explanation of who I am and what I want to do</p>
-    <p>Checkout my <a href="assets/cv.pdf" target='_blank' rel='noopener noreferrer'>CV</a></p>
-    <div id="hacktiv8_verify" class="container" data-toggle="modal" data-target="#scanToVerify">
+    <p class="text-center"><button type="button" class="btn btn-dark"><a href="assets/cv.pdf" target='_blank' rel='noopener noreferrer'>Download CV</a></button></p>
+
+    <div id="poseidon" class="container">
+      <p class="lead mt-3">About</p>
+      <div class="d-flex justify-content-center mb-3">
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" id="poseidon1" class="btn btn-sm btn-secondary btn-desc active" aria-pressed="true">shortest</button>
+          <button type="button" id="poseidon2" class="btn btn-sm btn-secondary btn-desc">2</button>
+          <button type="button" id="poseidon3" class="btn btn-sm btn-secondary btn-desc">3</button>
+          <button type="button" id="poseidon4" class="btn btn-sm btn-secondary btn-desc">4</button>
+          <button type="button" id="poseidon5" class="btn btn-sm btn-secondary btn-desc">5</button>
+          <button type="button" id="poseidon6" class="btn btn-sm btn-secondary btn-desc">6</button>
+          <button type="button" id="poseidon7" class="btn btn-sm btn-secondary btn-desc">longest</button>
+        </div>
+      </div>
+      <div id="description" class="text-center">
+        <p>Chairul is trying his best <br /> :)</p>
+        <!-- append description here -->
+      </div>
+    </div>
+    <hr class="my-4">
+
+    <div class="container">
+      <p class="lead">Portfolio</p>
+      <div id="portfolioCards" class="card-deck">
+        <!-- append portfolios here -->
+      </div>
+    </div>
+    <hr class="my-4">
+
+    <div id="hacktiv8_verify" class="container pb-4">
+      <p class="lead">Bio</p>
       <div class="row">
         <div class="col-md-auto">
-          <p>Recently I just finished Javascript Full Stack Web Development Course from Hacktiv8</p>
+          <p>
+            Chairul Akmal attended MAN Insan Cendekia Serpong, a high school on the outskirt of Jakarta.
+            He then went on to study marine biology at Tohoku University, where he got his bachelor's degree.
+            After that, he got a scholarship for a Master's degree in marine biology at James Cook University which he completed in 2019.
+            Recently, he finished Javascript Full Stack Web Development Course from Hacktiv8 which you can verify by clicking this
+              <a href="https://hire.hacktiv8.com/verify/fsjs/ChairulAkmal-20200712" target='_blank' rel='noopener noreferrer'> <u>link</u> </a>
+            or scanning the QR code below.
+          </p>
         </div>
-        <div class="col-sm">
+        <div class="col-sm" data-toggle="modal" data-target="#scanToVerify">
           <img id="thumbnailVerify" src="assets/images/Hacktiv8_verify.png" class="img-fluid rounded mx-auto d-block" alt="Scan to verify">
         </div>
       </div>
     </div>
 
-
-
-    <hr class="my-4">
-    <ul>
-      <li>Who I am: Chairul Akmal</li>
-      <li>What I want to do: Starting a startup working on better remote work infrastructure</li>
-      <li>Thank you for reading this. Also, if you've got the time. Try out these games that I 
-        <a href="https://chairulakmal.com/trust/" target='_blank' rel='noopener noreferrer'>translated</a> and 
-        <a href="https://chairulakmal.com/breakout/" target='_blank' rel='noopener noreferrer'>created</a>
-      </li>
-    </ul>
   </section>
 
   <footer class="container text-center py-2">
-    <p class="my-0">copyleft <span class="copyleft">&copy;</span> 2020 by <a href="https://github.com/chairulakmal">chairulakmal</a></p>
+    <p class="my-0">
+      copyleft 
+      <span class="copyleft">&copy;</span> 2020 by 
+      <a href="https://github.com/chairulakmal" target='_blank' rel='noopener noreferrer'>
+        chairulakmal
+      </a>
+    </p>
   </footer>
 
   <!-- Modal -->
