@@ -6,7 +6,7 @@ $(document).ready(function(){
 // describeYourself();
 const descriptions = [
   {
-    text: '<p>shortest <br />Chairul is trying his best <br /> :)</p>'
+    text: '<p><small>shortest</small> <br />Chairul is trying his best <br /> :)</p>'
   },
   {
     text: '<p><small>2</small> <br />Chairul is a marine biologist by training and software engineer by trade</p>'
@@ -61,20 +61,21 @@ let trident1, trident2, trident3, trident4, trident5, trident6, trident7;
 const setupTrident = () => {
   // $("#description").empty();
   descriptions.forEach((desc, idx) => {
+    const { text } = desc;
     if (idx === 0) {
-      trident1 = buildTrident(idx, desc.text)
+      trident1 = buildTrident(idx, text)
     } else if (idx === 1) {
-      trident2 = buildTrident(idx, desc.text)
+      trident2 = buildTrident(idx, text)
      }else if (idx === 2) {
-      trident3 = buildTrident(idx, desc.text)
+      trident3 = buildTrident(idx, text)
     } else if (idx === 3) {
-      trident4 = buildTrident(idx, desc.text)
+      trident4 = buildTrident(idx, text)
     } else if (idx === 4) {
-      trident5 = buildTrident(idx, desc.text)
+      trident5 = buildTrident(idx, text)
     } else if (idx === 5) {
-      trident6 = buildTrident(idx, desc.text)
+      trident6 = buildTrident(idx, text)
     } else if (idx === 6) {
-      trident7 = buildTrident(idx, desc.text)
+      trident7 = buildTrident(idx, text)
     }
   })
 
@@ -148,7 +149,7 @@ const showOff = () => {
         <img src="${image || 'assets/images/Hacktiv8_verify.png'}" class="card-img-top" alt="${name}">
         <div class="card-body">
           <a href="${url}" target='_blank' rel='noopener noreferrer'>
-            <h5 class="card-title">
+            <h5 class="card-title text-center">
               ${name}
             </h5>
           </a>
