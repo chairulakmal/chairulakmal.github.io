@@ -1,28 +1,99 @@
 $(document).ready(function(){
-  start();
+  showOff();
+  setupTrident();
 });
 
+// describeYourself();
 const descriptions = [
   {
-    text: '<p>Chairul is trying his best <br /> :)</p>'
+    text: '<p>shortest <br />Chairul is trying his best <br /> :)</p>'
   },
   {
-    text: '<p>Chairul is a marine biologist by training and software engineer by trade</p>'
+    text: '<p><small>2</small> <br />Chairul is a marine biologist by training and software engineer by trade</p>'
   },
   {
     text: `<p>
-    During the day, Chairul is a marine biologist with special interest in coral reefs and ecological restoration.
+    <small>3</small> <br />
+    During the day, Chairul is a marine biologist with special interest in coral reefs and ecological restoration. <br />
     During the night, Chairul is a software engineer with special interest in virtual economy.
     </p>`
   },
   {
     text: `<p>
-    Chairul is a marine biologist who loves programming. Chairul is also a software engineer who loves environment.
-    During the night, Chairul is a software engineer with special interest in virtual economy
+    <small>4</small> <br />
+    ... sorry currently unfinished ... <br />
+    please be patient. come back next week and there will be something new! <br />
+    in the meanwhile, you can check out my CV just under the website title <br />
+    cheers ;)
     </p>`
   },
+  {
+    text: `<p>
+    <small>5</small> <br />
+    ... sorry currently unfinished ... <br />
+    please be patient. come back next week and there will be something new! <br />
+    in the meanwhile, you can check out my CV just under the website title <br />
+    cheers ;)
+    </p>`
+  },
+  {
+    text: `<p>
+    <small>6</small> <br />
+    ... sorry currently unfinished ... <br />
+    please be patient. come back next week and there will be something new! <br />
+    in the meanwhile, you can check out my CV just under the website title <br />
+    cheers ;)
+    </p>`
+  },
+  {
+    text: `<p>
+    <small>longest</small> <br />
+    ... sorry currently unfinished ... <br />
+    please be patient. come back next week and there will be something new! <br />
+    in the meanwhile, you can check out my CV just under the website title <br />
+    cheers ;)
+    </p>`
+  }
 ];
 
+let trident1, trident2, trident3, trident4, trident5, trident6, trident7;
+
+const setupTrident = () => {
+  // $("#description").empty();
+  descriptions.forEach((desc, idx) => {
+    if (idx === 0) {
+      trident1 = buildTrident(idx, desc.text)
+    } else if (idx === 1) {
+      trident2 = buildTrident(idx, desc.text)
+     }else if (idx === 2) {
+      trident3 = buildTrident(idx, desc.text)
+    } else if (idx === 3) {
+      trident4 = buildTrident(idx, desc.text)
+    } else if (idx === 4) {
+      trident5 = buildTrident(idx, desc.text)
+    } else if (idx === 5) {
+      trident6 = buildTrident(idx, desc.text)
+    } else if (idx === 6) {
+      trident7 = buildTrident(idx, desc.text)
+    }
+  })
+
+};
+
+const buildTrident = (idx, text) => {
+  return $(`#poseidon${ idx + 1 }`).click(function () {
+    $("#poseidon1").removeClass("active");
+    $("#poseidon1").attr("aria-pressed",false);
+    $("#description").empty();
+    $('#description').append(
+      text
+    );
+  });
+};
+
+
+
+// showOff();
 const portfolios = [
   {
     name: 'eth.or.id',
@@ -68,30 +139,29 @@ const portfolios = [
   }
 ];
 
-const start = () => {
+const showOff = () => {
     $("#portfolioCards").empty();
     portfolios.forEach((el, idx) => {
-    const { name, description, stacks, url, image } = el;
-    console.log(idx)
-    $("#portfolioCards").append(`
-    <div class="card my-3">
-      <img src="${image || 'assets/images/Hacktiv8_verify.png'}" class="card-img-top" alt="${name}">
-      <div class="card-body">
-        <a href="${url}" target='_blank' rel='noopener noreferrer'>
-          <h5 class="card-title">
-            ${name}
-          </h5>
-        </a>
-        <p class="card-text">${description}</p>
+      const { name, description, stacks, url, image } = el;
+      $("#portfolioCards").append(`
+      <div class="card my-3">
+        <img src="${image || 'assets/images/Hacktiv8_verify.png'}" class="card-img-top" alt="${name}">
+        <div class="card-body">
+          <a href="${url}" target='_blank' rel='noopener noreferrer'>
+            <h5 class="card-title">
+              ${name}
+            </h5>
+          </a>
+          <p class="card-text">${description}</p>
+        </div>
+        <div class="card-footer" id="${idx}Stacks">
+        </div>
       </div>
-      <div class="card-footer" id="${idx}Stacks">
-      </div>
-    </div>
-    `);
-    stacks.forEach(tech => {
-      $(`#${idx}Stacks`).append(`
-        <span class="badge badge-success">${tech}</span>
-      `)
-    });
+      `);
+      stacks.forEach(tech => {
+        $(`#${idx}Stacks`).append(`
+          <span class="badge badge-success">${tech}</span>
+        `)
+      });
   });
 };
