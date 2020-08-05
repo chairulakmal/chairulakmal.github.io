@@ -6,20 +6,20 @@ $(document).ready(function(){
 // describeYourself();
 const descriptions = [
   {
-    text: '<p>Chairul is trying his best :)</p>'
+    text: '<p class="my-0">Chairul is trying his best :)</p>'
   },
   {
-    text: '<p><small>2</small> <br />Chairul is a marine biologist by training and software engineer by trade</p>'
+    text: '<p class="my-0"><small>2</small> <br />Chairul is a marine biologist by training and software engineer by trade</p>'
   },
   {
-    text: `<p>
+    text: `<p class="my-0">
     <small>3</small> <br />
-    During the day, Chairul is a marine biologist with special interest in coral reefs and ecological restoration. <br />
-    During the night, Chairul is a software engineer with special interest in virtual economy.
+    During the day, Chairul is a marine biologist with interests in coral reefs and ecological restoration. <br />
+    During the night, Chairul is a software engineer with interests in virtual economy and remote education.
     </p>`
   },
   {
-    text: `<p>
+    text: `<p class="my-0">
     <small>4</small> <br />
     ... sorry currently unfinished ... <br />
     please be patient. come back next week and there will be something new! <br />
@@ -28,7 +28,7 @@ const descriptions = [
     </p>`
   },
   {
-    text: `<p>
+    text: `<p class="my-0">
     <small>5</small> <br />
     ... sorry currently unfinished ... <br />
     please be patient. come back next week and there will be something new! <br />
@@ -38,7 +38,7 @@ const descriptions = [
     </p>`
   },
   {
-    text: `<p>
+    text: `<p class="my-0">
     <small>6</small> <br />
     ... sorry currently unfinished ... <br />
     please be patient. come back next week and there will be something new! <br />
@@ -49,7 +49,7 @@ const descriptions = [
     </p>`
   },
   {
-    text: `<p>
+    text: `<p class="my-0">
     <small>longest</small> <br />
     ... sorry currently unfinished ... <br />
     please be patient. come back next week and there will be something new! <br />
