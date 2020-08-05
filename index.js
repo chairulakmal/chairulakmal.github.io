@@ -1,12 +1,12 @@
 $(document).ready(function(){
-  showOff();
   setupTrident();
+  showOff();
 });
 
 // describeYourself();
 const descriptions = [
   {
-    text: '<p><small>shortest</small> <br />Chairul is trying his best <br /> :)</p>'
+    text: '<p>Chairul is trying his best :)</p>'
   },
   {
     text: '<p><small>2</small> <br />Chairul is a marine biologist by training and software engineer by trade</p>'
@@ -33,7 +33,8 @@ const descriptions = [
     ... sorry currently unfinished ... <br />
     please be patient. come back next week and there will be something new! <br />
     in the meanwhile, you can check out my CV just under the website title <br />
-    cheers ;)
+    cheers <br >
+    ;)
     </p>`
   },
   {
@@ -42,7 +43,9 @@ const descriptions = [
     ... sorry currently unfinished ... <br />
     please be patient. come back next week and there will be something new! <br />
     in the meanwhile, you can check out my CV just under the website title <br />
-    cheers ;)
+    cheers <br />
+    ;) <br />
+    ...
     </p>`
   },
   {
@@ -51,7 +54,10 @@ const descriptions = [
     ... sorry currently unfinished ... <br />
     please be patient. come back next week and there will be something new! <br />
     in the meanwhile, you can check out my CV just under the website title <br />
-    cheers ;)
+    cheers <br />
+    ;) <br />
+    ... <br />
+    enough?
     </p>`
   }
 ];
@@ -59,9 +65,7 @@ const descriptions = [
 let trident1, trident2, trident3, trident4, trident5, trident6, trident7;
 
 const setupTrident = () => {
-  // $("#description").empty();
-  descriptions.forEach((desc, idx) => {
-    const { text } = desc;
+  descriptions.forEach(({ text }, idx) => {
     if (idx === 0) {
       trident1 = buildTrident(idx, text)
     } else if (idx === 1) {
@@ -77,8 +81,7 @@ const setupTrident = () => {
     } else if (idx === 6) {
       trident7 = buildTrident(idx, text)
     }
-  })
-
+  });
 };
 
 const buildTrident = (idx, text) => {
@@ -112,7 +115,7 @@ const portfolios = [
   },
   {
     name: 'Tataplangit',
-    description: 'App where users can see & search current astronomy photos curated by NASA',
+    description: 'App where users can see & search current astronomy photos curated by <a href="https://apod.nasa.gov/apod/astropix.html" target="_blank" rel="noopener noreferrer">NASA</a>',
     stacks: ['React', 'Redux', 'Express', 'Heroku', 'Firebase'],
     url: 'https://tataplangit.web.app/',
     image: 'assets/images/scr_tataplangit.png'
@@ -146,7 +149,9 @@ const showOff = () => {
       const { name, description, stacks, url, image } = el;
       $("#portfolioCards").append(`
       <div class="card my-3">
-        <img src="${image || 'assets/images/Hacktiv8_verify.png'}" class="card-img-top" alt="${name}">
+        <a href="${url}" target='_blank' rel='noopener noreferrer'>
+          <img src="${image || 'assets/images/Hacktiv8_verify.png'}" class="card-img-top" alt="${name}">
+        </a>
         <div class="card-body">
           <a href="${url}" target='_blank' rel='noopener noreferrer'>
             <h5 class="card-title text-center">

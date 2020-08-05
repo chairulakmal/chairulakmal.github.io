@@ -40,8 +40,13 @@ h1 {
 
 #description {
   background-color: rgba(75, 75, 75, 1);
-  min-height: 10vh;
-  padding: 0 2rem;
+  min-height: 6vh;
+  padding: 1rem 2rem;
+}
+
+#bio {
+  background-color: rgba(75, 75, 75, 1);
+  padding: 1rem 2rem;
 }
 
 a  {
