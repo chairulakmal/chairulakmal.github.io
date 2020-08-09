@@ -9,27 +9,27 @@ const descriptions = [
     text: '<p class="my-0">Chairul is trying his best :)</p>'
   },
   {
-    text: '<p class="my-0"><small>2</small> <br />Chairul is a marine biologist by training and software engineer by trade</p>'
+    text: '<p class="my-0"><small>one-liner</small> <br />Chairul is a marine biologist who likes to build software.</p>'
   },
   {
     text: `<p class="my-0">
-    <small>3</small> <br />
+    <small>two-sentences</small> <br />
     During the day, Chairul is a marine biologist with interests in coral reefs and ecological restoration. <br />
     During the night, Chairul is a software engineer with interests in virtual economy and remote education.
     </p>`
   },
   {
     text: `<p class="my-0">
-    <small>4</small> <br />
+    <small>speaker-style</small> <br />
     ... sorry currently unfinished ... <br />
     please be patient. come back next week and there will be something new! <br />
     in the meanwhile, you can check out my CV just under the website title <br />
-    cheers ;)
+    cheers
     </p>`
   },
   {
     text: `<p class="my-0">
-    <small>5</small> <br />
+    <small>a-paragraph</small> <br />
     ... sorry currently unfinished ... <br />
     please be patient. come back next week and there will be something new! <br />
     in the meanwhile, you can check out my CV just under the website title <br />
@@ -39,7 +39,7 @@ const descriptions = [
   },
   {
     text: `<p class="my-0">
-    <small>6</small> <br />
+    <small>author-style</small> <br />
     ... sorry currently unfinished ... <br />
     please be patient. come back next week and there will be something new! <br />
     in the meanwhile, you can check out my CV just under the website title <br />
@@ -50,7 +50,7 @@ const descriptions = [
   },
   {
     text: `<p class="my-0">
-    <small>longest</small> <br />
+    <small>short-essay</small> <br />
     ... sorry currently unfinished ... <br />
     please be patient. come back next week and there will be something new! <br />
     in the meanwhile, you can check out my CV just under the website title <br />
