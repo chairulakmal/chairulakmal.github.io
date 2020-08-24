@@ -12,6 +12,7 @@ body {
   justify-content: center;
   text-align: center;
   background-color: rgba(54, 54, 54, 1);
+  min-height: 100vh;
 }
 
 h1 {
