@@ -1,7 +1,7 @@
-$(document).ready(function(){
-  setupTrident();
-  showOff();
-});
+// $(document).ready(function(){
+//   setupTrident();
+//   showOff();
+// });
 
 // describeYourself();
 const descriptions = [
