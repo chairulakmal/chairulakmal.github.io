@@ -12,97 +12,28 @@
     name="description"
     content="Personal site of software engineer & marine biologist chairulakmal"
   />
-  <script src="assets/js/jquery-3.5.1.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/index.js"></script>
+  <!-- <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script> -->
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <script src="assets/js/index.js"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/index.css">
   <title>chairulakmal</title>
 </head>
 
 <body class="container">
-  <section id="zeus" class="container-fluid">
-    <h1 class="display-4 text-center">Chairul Akmal</h1>
-    <p class="text-center">
-      <button type="button" class="btn btn-dark">
-        <a href="assets/cv_2020.pdf" target='_blank' rel='noopener noreferrer'>Download CV</a>
-      </button>
-    </p>
-    <hr class="my-3">
-
-    <div id="poseidon" class="container">
-      <p class="lead mt-3">Intro</p>
-      <div class="d-flex justify-content-center mb-3">
-        <div class="btn-group" role="group" aria-label="Basic example">
-          <button type="button" id="poseidon1" class="btn btn-sm btn-secondary btn-desc active" aria-pressed="true">shortest</button>
-          <button type="button" id="poseidon2" class="btn btn-sm btn-secondary btn-desc">2</button>
-          <button type="button" id="poseidon3" class="btn btn-sm btn-secondary btn-desc">3</button>
-          <button type="button" id="poseidon4" class="btn btn-sm btn-secondary btn-desc">4</button>
-          <button type="button" id="poseidon5" class="btn btn-sm btn-secondary btn-desc">5</button>
-          <button type="button" id="poseidon6" class="btn btn-sm btn-secondary btn-desc">6</button>
-          <button type="button" id="poseidon7" class="btn btn-sm btn-secondary btn-desc">longest</button>
-        </div>
-      </div>
-      <div id="description" class="text-center">
-        <!-- append description here -->
-        <p class="my-0">Chairul is trying his best :)</p>
-      </div>
-    </div>
-    <hr class="my-3">
-
-    <div class="container">
-      <p class="lead">Portfolio</p>
-      <div id="portfolioCards" class="card-deck">
-        <!-- append portfolios here -->
-      </div>
-    </div>
-    <hr class="my-3">
-
-    <div id="hacktiv8_verify" class="container pb-4">
-      <p class="lead">Bio</p>
-      <div class="row">
-        <div class="col-md-auto">
-          <p id="bio">
-            Chairul Akmal attended MAN Insan Cendekia Serpong, a high school on the outskirt of Jakarta.
-            He then went on to study marine biology at Tohoku University, where he got his bachelor's degree.
-            After that, he got a scholarship for a Master's degree in marine biology at James Cook University which he completed in 2019.
-            Recently, he finished Javascript Full Stack Development Course from Hacktiv8 which you can verify by clicking this
-              <a href="https://hire.hacktiv8.com/verify/fsjs/ChairulAkmal-20200712" target='_blank' rel='noopener noreferrer'> <u>link</u> </a>
-            or scanning the QR code below.
-          </p>
-        </div>
-        <div class="col-sm" data-toggle="modal" data-target="#scanToVerify">
-          <img id="thumbnailVerify" src="assets/images/Hacktiv8_verify.png" class="img-fluid rounded mx-auto d-block" alt="Scan to verify">
-        </div>
-      </div>
+  <section id="zeus">
+    <h3 class="display-4">Site Under Construction</h3>
+    <p class="lead">Sorry for the inconvenience, currently this website is being re-built. If you're bored and want to revel in nostalgia, play "Harvest Moon: Back to the Nature" in the emulator below. Cheers!</p>
+    <div class="d-flex justify-content-center">
+      <iframe
+        src="https://www.retrogames.cc/embed/40055-harvest-moon-back-to-nature.html" 
+        width="600" height="450" frameborder="no" allowfullscreen="true" 
+        webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="no"
+        >
+      </iframe>
     </div>
 
   </section>
-
-  <footer class="container text-center py-2">
-    <p class="my-0">
-      copyleft 
-      <span class="copyleft">&copy;</span> 2020 by 
-      <a href="https://github.com/chairulakmal" target='_blank' rel='noopener noreferrer'>
-        chairulakmal
-      </a>
-    </p>
-  </footer>
-
-  <!-- Modal -->
-  <div class="modal fade" id="scanToVerify" tabindex="-1" role="dialog" aria-labelledby="Scan to verify" aria-hidden="true" data-backdrop="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-body text-center">
-          <img src="assets/images/Hacktiv8_verify.png" class="rounded img-fluid" alt="Scan to verify">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
 </body>
 
 </html>
